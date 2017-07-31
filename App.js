@@ -5,7 +5,10 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Screen</Text>
+        <Text>Line 1</Text>
+        <Text>Line 2</Text>
+        <Text>Line 3</Text>
+        <Text>Line 4</Text>
       </View>
     );
   }
@@ -14,6 +17,10 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 40,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     backgroundColor: '#fff',
   },
 });
